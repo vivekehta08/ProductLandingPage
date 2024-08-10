@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Food Wala</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ################      HOME      ################### -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-sm-dark fixed-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse px-5 justify-content-center"
+          id="navbarTogglerDemo01"
+        >
+          <a class="navbar-brand d-sm-none d-md-block" href="#">FOOD WALA</a>
+          <ul
+            class="navbar-nav me-auto my-2 mb-lg-0 px-md-5 mx-md-5 text-white"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recipes">RECIPES</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                SERVICES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#special-dishes"
+                    >SPECIAL DISHES</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#menu">MENU</a></li>
+                <li>
+                  <a class="dropdown-item" href="#testimonial">TESTIMONIAL</a>
+                </li>
+                <li><a class="dropdown-item" href="#blog">BLOG</a></li>
+                <li>
+                  <a class="dropdown-item" href="#subscribe-newsletter"
+                    >NEWSLETTER</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NEWS</a>
+            </li>
+          </ul>
+          <button class="white-font cool-btn px-md-5 mx-md-5">
+            CONTACT US
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="padding white-font">
+      <div id="hero" class="text-shadow">
+        <div>
+          <h1>DELICIOUS FOOD</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
+            consectetur sunt fuga ad repudiandae. Excepturi voluptatum, quis,
+            rerum nesciunt.
+          </p>
+          <button class="btn-padding white-font hover-btn">GET STARTED</button>
+        </div>
+      </div>
+
+      <i id="left-arrow" class="fas fa-angle-left arrow"></i>
+      <i id="right-arrow" class="fas fa-angle-right arrow"></i>
+
+      <div class="circles">
+        <div class="circle"></div>
+        <div class="circle circle-active"></div>
+      </div>
+    </section>
+
+    <!-- ################      ICONS     ################### -->
+
+    <section id="icons" class="p-5">
+      <div class="row justify-content-center">
+        <div class="item col-sm-5 col-md-2">
+          <img src="./icons/cheers.png" alt="drinks" />
+          <h2>Drinks</h2>
+          <p class="line-height">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            excepturi ab cumque hic modi laborum.
+          </p>
+        </div>
+        <div class="item col-sm-5 col-md-2">
+          <img src="./icons/fish.png" alt="fish" />
+          <h2>Sea Foods</h2>
+          <p class="line-height">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            excepturi ab cumque hic modi laborum.
+          </p>
+        </div>
+        <div class="item col-sm-5 col-md-2">
+          <img src="./icons/coffee-cup.png" alt="coffee" />
+          <h2>Cup Coffees</h2>
+          <p class="line-height">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            excepturi ab cumque hic modi laborum.
+          </p>
+        </div>
+        <div class="item col-sm-5 col-md-2">
+          <img src="./icons/salad.png" alt="salad" />
+          <h2>Fresh Salad</h2>
+          <p class="line-height">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            excepturi ab cumque hic modi laborum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################ SPECIAL DISHES ################## -->
+
+    <section class="p-2 pt-5 py-md-5" id="special-dishes">
+      <hr />
+      <h1 class="">SPECIAL DISHES</h1>
+      <div class="bg-text-container">
+        <span class="bg-text">dishes</span>
+      </div>
+      <div class="row justify-content-end p-1">
+        <div class="dish-item col-11 col-md-4">
+          <div class="img-container" id="img-1">
+            <img src="./img/dishes_1.jpg" alt="" />
+          </div>
+          <div class="dish-details">
+            <p class="price">10.99$</p>
+            <span>ORGANIC TOMATO SALAD, gorgonzola cheese, capers</span>
+          </div>
+        </div>
+        <div class="dish-item col-11 col-md-4">
+          <div class="img-container" id="img-2">
+            <img src="./img/dishes_1.jpg" alt="" />
+          </div>
+          <div class="dish-details">
+            <p class="price">10.99$</p>
+            <span>ORGANIC TOMATO SALAD</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 row justify-content-center my-5">
+        <div class="circle circle-active p-1"></div>
+        <div class="circle p-1"></div>
+        <div class="circle p-1"></div>
+        <div class="circle p-1"></div>
+      </div>
+    </section>
+
+    <!-- ################     Menu       ################## -->
+
+    <section class="p-2 pt-5 py-md-5" id="menu">
+      <hr />
+      <h1 class="mb-3">our menu</h1>
+      <div class="bg-text-container">
+        <span class="bg-text">menu</span>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center px-1">
+          <div class="menu-item row col-lg-6 col-md-12 p-1">
+            <div class="menu-item-details col-12 col-md-6 p-3">
+              <h2>Green Caesar salad, shaved ragiano</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                rem, corrupti perferendis ipsum vero maxime enim accusamus
+                labore eligendi, sit officia optio repudiandae id! Vero
+                aspernatur nihil molestiae nesciunt aliquam?
+              </p>
+              <span>$12.00</span>
+            </div>
+            <div class="menu-item-img col-12 col-md-6">
+              <img src="./img/dishes_4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="menu-item row col-lg-6 col-md-12 p-1">
+            <div class="menu-item-details col-md-6 p-3">
+              <h2>Bacon wrapped wild gulf prawns</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                rem, corrupti perferendis ipsum vero maxime enim accusamus
+                labore eligendi, sit officia optio repudiandae id! Vero
+                aspernatur nihil molestiae nesciunt aliquam?
+              </p>
+              <span>$12.00</span>
+            </div>
+            <div class="menu-item-img col-md-6">
+              <img src="./img/dishes_2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="menu-item row col-lg-6 col-md-12 p-1">
+            <div class="menu-item-img col-md-6">
+              <img src="./img/dishes_1.jpg" alt="" />
+            </div>
+            <div class="menu-item-details pt-2  col-md-6 p-3">
+              <h2>Spaicy Calamari and beans</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                rem, corrupti perferendis ipsum vero maxime enim accusamus
+                labore eligendi, sit officia optio repudiandae id! Vero
+                aspernatur nihil molestiae nesciunt aliquam?
+              </p>
+              <span>$12.00</span>
+            </div>
+          </div>
+          <div class="menu-item row col-lg-6 col-md-12 p-1">
+            <div class="menu-item-img col-md-6">
+              <img src="./img/dishes_3.jpg" alt="" />
+            </div>
+            <div class="menu-item-details pt-2  col-md-6 p-3">
+              <h2>Green Caesar salad, shaved ragiano</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                rem, corrupti perferendis ipsum vero maxime enim accusamus
+                labore eligendi, sit officia optio repudiandae id! Vero
+                aspernatur nihil molestiae nesciunt aliquam?
+              </p>
+              <span>$12.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################   TESTIMONIAL - BLOG  ################## -->
+
+    <section class="p-2 pt-5 py-md-5">
+      <div class="container" id="testimonial">
+        <hr />
+        <h1 class="">testimonial</h1>
+        <div class="bg-text-container">
+          <span class="bg-text">TESTIMONIAL</span>
+        </div>
+        <div class="row">
+          <div class="testimonial-item col-md-4 pt-4 pt-md-0">
+            <p class="line-height">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              natus officiis maxime reprehenderit id voluptas consectetur error
+              temporibus illum sunt blanditiis assumenda ad eos, voluptatibus
+              totam est nemo voluptate eius.
+            </p>
+            <div class="testimonial-bottom">
+              <img src="./img/person_1.jpg" alt="" />
+              <div>
+                <p class="mb-0">Mellisa Howard</p>
+                <span>CEO, XYZ Company</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item col-md-4 pt-4 pt-md-0">
+            <p class="line-height">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              natus officiis maxime reprehenderit id voluptas consectetur error
+              temporibus illum sunt blanditiis assumenda ad eos, voluptatibus
+              totam est nemo voluptate eius.
+            </p>
+            <div class="testimonial-bottom">
+              <img src="./img/person_2.jpg" alt="" />
+              <div>
+                <p class="mb-0">Mellisa Howard</p>
+                <span>CEO, XYZ Company</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item col-md-4 pt-4 pt-md-0">
+            <p class="line-height">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              natus officiis maxime reprehenderit id voluptas consectetur error
+              temporibus illum sunt blanditiis assumenda ad eos, voluptatibus
+              totam est nemo voluptate eius.
+            </p>
+            <div class="testimonial-bottom">
+              <img src="./img/person_3.jpg" alt="" />
+              <div>
+                <p class="mb-0">Mellisa Howard</p>
+                <span>CEO, XYZ Company</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-5" id="blog">
+        <hr />
+        <h1 class="">blog</h1>
+        <div class="bg-text-container">
+          <span class="bg-text">OUR BLOG</span>
+        </div>
+          <div class="row justify-content-center">
+            <div class="row blog-item col-10 col-lg-6 my-3">
+              <div class="blog-img col-12 col-md-5 mb-2">
+                <img src="./img/dishes_1.jpg" alt="" />
+              </div>
+              <div class="blog-item-details col-12 col-md-5">
+                <h2>How to cook beef steak with sauce</h2>
+                <span></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+                  nam culpa earum veritatis blanditiis commodi molestias
+                  deleniti dolore fugit amet facilis aspernatur nisi assumenda
+                  delectus corporis enim voluptates, eveniet sequi.
+                </p>
+                <div>
+                  <button class="cool-btn">read more</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row blog-item col-10 col-lg-6 my-3">
+              <div class="blog-img col-12 col-md-5 mb-2">
+                <img src="./img/dishes_2.jpg" alt="" />
+              </div>
+              <div class="blog-item-details col-12 col-md-5">
+                <h2>How to cook beef steak with sauce</h2>
+                <span></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+                  nam culpa earum veritatis blanditiis commodi molestias
+                  deleniti dolore fugit amet facilis aspernatur nisi assumenda
+                  delectus corporis enim voluptates, eveniet sequi.
+                </p>
+                <div>
+                  <button class="cool-btn">read more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+      </div>
+    </section>
+
+    <!-- ############   SUBSCRIBE - NEWLETTER  ############ -->
+
+    <section class="p-2 pt-5 py-md-5" id="subscribe-newsletter">
+      <div class="container">
+        <h1>Subscribe Newsletter</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+          sequi necessitatibus reprehenderit animi ea voluptatum tempore optio
+          sunt iure molestias magnam temporibus, dolore dolorum error, eos
+          natus, eligendi modi aperiam?
+        </p>
+        <form
+          class="container  mb-5 "
+          action="#"
+        >
+          <div class="">
+            <input
+              class=""
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email Adress"
+            />
+            <button type="submit" class="cool-btn ">
+              subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="p-md-2 py-5">
+      <div class="container col-12 col-md-10 justify-content-center">
+        <div class="row justify-content-center">
+          <div class="footer-flex-item col-10 col-md-4" id="about-us">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              omnis recusandae eum esse quos facere. Ipsum aliquid, asperiores
+              illo optio ipsam quis dolor autem aspernatur, totam rerum libero
+              unde quo.
+            </p>
+
+            <div>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+          <div class="footer-flex-item col-10 col-md-4" id="hours-and-contact">
+            <div>
+              <h2>Opening Hours:</h2>
+              <p class="bold">Monday - Sunday</p>
+              <p>11AM - 12PM</p>
+            </div>
+
+            <div id="contact-info">
+              <h2>Contact Info</h2>
+
+              <div>
+                <span>Address:</span>
+                <p>Mota Varchha, Surat Gujarat, India</p>
+              </div>
+
+              <div>
+                <span>Telephone</span>
+                <p>+91 8855220044</p>
+              </div>
+
+              <div>
+                <span>Email:</span>
+                <p>info@foodwala.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-flex-item col-10 col-md-4" id="quick-links">
+            <h2>Quick Links</h2>
+            <a href="#">About</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Disclaimers</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p>
+          Copyright ©2024 All rights reserved | This template was made with ❤ by
+          <a href="Vivek">Vivek</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const nav = document.querySelector("nav");
+      const sticky = nav.offsetTop + 50;
+
+      window.onscroll = () => {
+        window.scrollY >= sticky
+          ? nav.classList.add("bg-dark")
+          : nav.classList.remove("bg-dark");
+      };
+    </script>
+  </body>
+</html>

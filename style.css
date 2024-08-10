@@ -1,0 +1,515 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  --color1: #cf1d16;
+  --color2: #8a9199;
+  --bg-text-color: #f7f7f7;
+  --bg-text-color-darker: #e3e3e3;
+  font-size: 20px;
+  font-family: "Open Sans";
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 1.6rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.cool-btn {
+  background-color: var(--color1);
+  padding: 15px 30px;
+  text-transform: uppercase;
+  color: var(--bg-text-color);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  border: none;
+  transition: 0.1s;
+}
+
+.cool-btn:hover {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cool-btn:focus {
+  outline: none;
+}
+
+.padding {
+  padding: 7rem;
+}
+
+@media screen and (max-width: 800px) {
+  .padding {
+    padding: 0;
+  }
+}
+
+.padding-tb {
+  padding: 6rem 1rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.hover-text:hover {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.1s;
+}
+
+.hover-btn:hover {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+}
+
+.white-font {
+  color: white;
+}
+
+.btn-padding {
+  padding: 10px 15px;
+}
+
+.text-shadow {
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.bg-text-container {
+  margin-top: -55px;
+  margin-bottom: -22px;
+  max-height: 100px;
+}
+.bg-text {
+  opacity: 0.05;
+  font-size: 10vmin;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+
+.negative-margin-bottom {
+  margin-bottom: -1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.negative-margin-top {
+  margin-top: -2.5rem;
+}
+
+.line-height {
+  line-height: 1.8rem;
+}
+
+section {
+  min-height: 50vh;
+}
+
+section:nth-of-type(even) {
+  background-color: #f8f9fa;
+  position: relative;
+  /* z-index: -2; */
+}
+
+hr {
+  width: 40px;
+  height: 3px;
+  color: var(--color1);
+  background-color: var(--color1);
+  margin: 0 auto 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.circles {
+  position: absolute;
+  bottom: 5rem;
+  left: 49%;
+  right: auto;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2px;
+}
+
+.circle-active {
+  width: 16px;
+  height: 16px;
+}
+
+/* #########################     HOME              ####################### */
+
+#home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.212)), url("./img/hero_2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  padding-top: 2rem;
+}
+
+#home .arrow {
+  position: absolute;
+  font-size: 70px;
+  top: 45%;
+  font-weight: bold;
+  opacity: 0.4;
+}
+
+#home #right-arrow {
+  right: 10px;
+}
+
+#home #left-arrow {
+  left: 10px;
+}
+
+#hero {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero div {
+  text-align: center;
+  width: 70%;
+}
+
+#hero h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+#hero p {
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+#hero button {
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+#hero button:focus {
+  outline: none;
+}
+
+#home .circle {
+  background-color: var(--color2);
+}
+
+#home .circle:last-child {
+  background-color: white;
+}
+
+/* ####################################################################### */
+/* #########################     ICONS              ###################### */
+/* ####################################################################### */
+
+#icons {
+  min-height: 0;
+}
+
+#icons .item {
+  display: grid;
+  grid-template-columns: repeat(4);
+  margin: 0 15px;
+  text-align: center;
+}
+
+#icons img {
+  height: 70px;
+  margin: auto;
+}
+
+#icons h2 {
+  margin: 20px auto;
+  color: #d43933;
+}
+
+#icons p {
+  color: var(--color2);
+}
+
+/* ####################################################################### */
+/* #####################     SPECIAL DISHES         ###################### */
+/* ####################################################################### */
+
+#special-dishes {
+  position: relative;
+}
+
+
+#special-dishes .dish-item {
+  position: relative;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#special-dishes .img-container {
+  background-size: contain;
+  background-position: center;
+}
+
+#special-dishes #img-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./img/dishes_1.jpg");
+}
+
+#special-dishes #img-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./img/dishes_2.jpg");
+}
+
+#special-dishes img {
+  visibility: hidden;
+  width: 100%;
+  height: auto;
+}
+
+#special-dishes .dish-details {
+  position: absolute;
+  color: white;
+  width: 50%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#special-dishes .dish-details p {
+  background-color: var(--color1);
+  border-radius: 50%;
+  width: fit-content;
+  margin: auto;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+}
+
+#special-dishes .circles {
+  bottom: 3rem;
+}
+
+#special-dishes .circle {
+  background-color: #e6e6e6;
+}
+
+#special-dishes .circle-active {
+  background-color: var(--color1);
+}
+
+/* ####################################################################### */
+/* #####################             MENU           ###################### */
+/* ####################################################################### */
+
+#menu .menu-item {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  margin-top: -5px;
+}
+
+#menu .menu-item h2 {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+#menu .menu-item p {
+  font-size: 0.8rem;
+  color: var(--color2);
+  line-height: 2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#menu img {
+  width: 100%;
+}
+
+#menu .menu-item-details span {
+  color: var(--color1);
+  font-size: 1.2rem;
+}
+
+/* ####################################################################### */
+/* #####################          TESTIMONIAL       ###################### */
+/* ####################################################################### */
+
+#testimonial{
+  overflow-x: hidden;
+}
+#testimonial .testimonial-bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#testimonial img {
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#testimonial .testimonial-bottom span {
+  color: var(--color2);
+}
+
+/* ####################################################################### */
+/* #####################            BLOG            ###################### */
+/* ####################################################################### */
+
+#blog .blog-item {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+}
+
+#blog .blog-item-details {
+  padding: 0 0.5rem;
+}
+
+#blog .blog-item-details h2 {
+  font-size: 100%;
+}
+
+#blog p {
+  color: var(--color2);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 0.8rem;
+}
+
+#blog img {
+  width: 100%;
+}
+
+/* ####################################################################### */
+/* #####################    SUBSCRIBE NEWSLETTER    ###################### */
+/* ####################################################################### */
+
+#subscribe-newsletter {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#subscribe-newsletter h1 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+#subscribe-newsletter p {
+  line-height: 2;
+  color: var(--color2);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#subscribe-newsletter form {
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+}
+
+#subscribe-newsletter form input {
+  padding: 10px 25px;
+  flex-basis: 65%;
+  border: 4px solid var(--bg-text-color-darker);
+}
+
+#subscribe-newsletter button {
+  padding: auto 50px;
+  letter-spacing: 3px;
+}
+
+/* ####################################################################### */
+/* #####################            FOOTER          ###################### */
+/* ####################################################################### */
+
+footer {
+  background-color: #262626;
+  max-width: 100vw;
+}
+
+footer h2 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+footer p,
+footer span {
+  color: #939393;
+}
+
+footer #hours-and-contact > div:first-of-type {
+  margin-bottom: 40px;
+}
+
+footer #contact-info p {
+  color: white;
+}
+
+footer #contact-info div {
+  margin-bottom: 20px;
+}
+
+footer #quick-links a {
+  display: block;
+  line-height: 2;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--color1);
+}
+
+footer > div:last-child {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+footer #about-us div {
+  margin-top: 2.5rem;
+}
+
+footer #about-us i {
+  color: var(--color1);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px;
+  box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.253);
+}
